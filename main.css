@@ -450,7 +450,7 @@ th {
 }
 
 body {
-    background-image: url("../images/shop.jpg");
+    background-image: url("../shoppingList/images/shop.jpg");  /* change the opacity of background */
 }
 
 .title {
