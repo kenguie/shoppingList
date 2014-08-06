@@ -450,10 +450,51 @@ th {
 }
 
 body {
-    background-image: url("../shoppingList/images/shop.jpg");  /* change the opacity of background */
+    background-image: url("../shoppingList/images/shoplight.jpg"); 
 }
 
 .title {
     text-align: center;
     font-size: 2.5em;
+}
+
+.additems {
+    text-align: center;
+}
+
+.additems p {
+    display: inline;
+}
+
+#groceries {
+    display: inline;
+}
+
+.space {
+    height: 25px;
+}
+
+.items {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.unchecked {
+    /*position: relative;*/
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+#bought {
+    display: inline;
+}
+
+#notbought {
+    display: inline;
+}
+
+#trash {
+    /* position: absolute; */
 }
