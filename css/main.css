@@ -481,6 +481,7 @@ body {
 
 .unchecked {
     /*position: relative;*/
+    /* height: 50px;*/
 }
 
 .checked {
@@ -491,10 +492,19 @@ body {
     display: inline;
 }
 
-#notbought {
+.notbought {
     display: inline;
 }
 
-#trash {
+.checkbox {
+    height: 30px;
+    width: 30px;
+}
+
+#delete {
     /* position: absolute; */
+    background-color: lightblue;
+    border-radius: 5px;
+    border-color: gray;
+    font-size: .5em;
 }
