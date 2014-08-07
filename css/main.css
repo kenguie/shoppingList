@@ -450,7 +450,10 @@ th {
 }
 
 body {
-    background-image: url("../images/shoplight.jpg"); 
+    background-image: url("../images/shoplight.jpg");
+    background-size: cover;
+    background attachment: fixed;
+    background position: center;
 }
 
 .title {
@@ -496,13 +499,15 @@ body {
     display: inline;
 }
 
-.checkbox {
+#checkbox {
+    vertical-align: middle;
     height: 30px;
     width: 30px;
 }
 
 #delete {
     /* position: absolute; */
+    vertical-align: middle;
     background-color: lightblue;
     border-radius: 5px;
     border-color: gray;
