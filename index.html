@@ -20,13 +20,14 @@
     
     <div class="space"></div>
     
-    <div class="items">
+    <ul class="items">
         <div class="unchecked">
-            <p class="notbought"> <img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox"></span>apples<input type="button" id="delete" value="Delete"> </p>
+            <li class="notbought"> <img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox"></span>apples<input type="button" id="delete" value="Delete"> </li>
+            <li class="notbought"> <img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox"></span>bananas<input type="button" id="delete" value="Delete"> </li>
         </div>
         <div class="checked">
-            <input type="checkbox" id="bought" value="oranges"> oranges
-            <input type="button" id="delete" value="Delete">
+            <li class="bought"> <img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox"></span>oranges<input type="button" id="delete" value="Delete"> </li>
+            <li class="bought"> <img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox"></span>pecans<input type="button" id="delete" value="Delete"> </li>
         </div>
 <!-- random thoughts for later - IF the check box IS checked, crossout item / if not, do not cross out -->
 <!-- What about a table? Can you place buttons on a table?
@@ -35,13 +36,10 @@ make it an unordered list?
 still have to put a delete button on the right and a done button on left ... maybe just make it click to cross out
 one example just has it not as a list but continuing as <p> elements
 
--->        
-        <div class="space"></div>
-        <input type="button" id="clearall" value="Clear List">
-    </div>
-    
-<div class="nostrikethrough"></div>
+--> </ul>       
+    <div class="space"></div>
 
+    <input type="button" id="clearall" value="Clear List">
 
 </body>
 </html>

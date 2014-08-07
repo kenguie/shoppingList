@@ -469,15 +469,12 @@ body {
     display: inline;
 }
 
-#groceries {
-    display: inline;
-}
-
-.space {
+/* .space {
     height: 25px;
-}
+} */ 
 
 .items {
+    display: inline;
     text-align: center;
     font-size: 1.5em;
 }
@@ -491,12 +488,14 @@ body {
     text-decoration: line-through;
 }
 
-#bought {
-    display: inline;
+.bought {
+    /* display: inline;*/
+    list-style-type: none;
 }
 
 .notbought {
-    display: inline;
+    /* display: inline; */
+    list-style-type: none;
 }
 
 #checkbox {
@@ -512,4 +511,11 @@ body {
     border-radius: 5px;
     border-color: gray;
     font-size: .5em;
+}
+
+#clearall {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 auto;
 }
