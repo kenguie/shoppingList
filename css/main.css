@@ -445,28 +445,61 @@ th {
 
 
 
-* {
+/*   * {
     border: 1px solid orange;
-}
+}  */
 
 body {
     background-image: url("../images/shoplight.jpg");
     background-size: cover;
     background attachment: fixed;
     background position: center;
+    /* border: 3px solid black; */
+}
+
+.instructionContainer {
+  position: relative;
+  height:1px;
+} 
+
+.instructions {
+  font-weight: bold;
+  border: 2px solid blue;
+  padding: 5px;
+  background-color: lightblue;
+  right: 0;
+  opacity: .65;
+  position: absolute;
 }
 
 .title {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
+    font-family: 'Pacifico', Times New Roman, sans-serif;
+}
+
+.container {
+    text-align: center;
 }
 
 .additems {
-    text-align: center;
+    font-weight: bold;
+    border: 4px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 2px;
 }
 
 .additems p {
     display: inline;
+}
+
+#groceries {
+    border: 2px solid blue;
+}
+
+#addbutton {
+    border: 1px solid orange;
 }
 
 /* .space {
@@ -502,6 +535,12 @@ body {
     vertical-align: middle;
     height: 30px;
     width: 30px;
+    margin-right: 20px;
+}
+
+#foods {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
 }
 
 #delete {
@@ -511,11 +550,23 @@ body {
     border-radius: 5px;
     border-color: gray;
     font-size: .5em;
+    margin-left: 20px;
 }
 
 #clearall {
-  display: block;
-  text-align: center;
-  font-size: 1.5em;
-  margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 auto;
+    font-family: Times New Roman, sans-serif;
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+footer {
+    font-size: .75em;
+    bottom: 0;
+    left: 0;
+    position: absolute;
 }
