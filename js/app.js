@@ -9,14 +9,14 @@ $(document).ready(function() {
             }
         });
     }
-    
+    //defined getGrocery, call it!
     getGrocery();
     
-    //got the grocery
+    //got the grocery, print it!
     function postGrocery() {
         var grocery = $("#groceries").val();
-        var listitem = '<li class="notbought"><img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox"><span id="grocery">apples</span><input type="button" id="delete" value="Delete"> </li>"'
-        $("#items").prepend(listitem);
+        var listitem = '<li class="notbought"><img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox">' +grocery+ '<input type="button" id="delete" value="Delete"> </li>'
+        $(".items").prepend(listitem);
         $("#groceries").val("");
         console.log(grocery);
         console.log(listitem);

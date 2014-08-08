@@ -524,11 +524,15 @@ body {
 .bought {
     /* display: inline;*/
     list-style-type: none;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
 }
 
 .notbought {
     /* display: inline; */
     list-style-type: none;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
 }
 
 #checkbox {
