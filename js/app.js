@@ -2,16 +2,21 @@ $(document).ready(function() {
     
     //append to the list using enter
     function getGrocery() {
-        $("#groceries").keydown(function (enter) {
+        $("#groceries").keydown(function(enter) {
             if (enter.keyCode==13) {
-                console.log("enter is pressed.")
+                console.log("enter is pressed.");
                 postGrocery();
-            }  //else if (enter.keycode==#addbutton) {
-                //console.log("plus is pressed.")
-                //postGrocery();
-            // }
+            }
+            
+        //append to list using the + button
+        $("#addbutton").click(function(enter) {
+           console.log("+ was pressed.");
+           postGrocery();
         });
-    }
+        
+        });
+    };
+    
     //defined getGrocery, call it!
     getGrocery();
     
