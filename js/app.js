@@ -6,7 +6,10 @@ $(document).ready(function() {
             if (enter.keyCode==13) {
                 console.log("enter is pressed.")
                 postGrocery();
-            }
+            }  //else if (enter.keycode==#addbutton) {
+                //console.log("plus is pressed.")
+                //postGrocery();
+            // }
         });
     }
     //defined getGrocery, call it!
