@@ -49,7 +49,12 @@ $(document).ready(function() {
         } else {
             $(this).closest("li").removeClass("checked").addClass("notbought");
         }
-    })
+    });
+    
+    // time to get the clearall working!
+    $(document).on("click", "#clearall", function () {
+        $(".items").empty();
+    });
 });
 
 
