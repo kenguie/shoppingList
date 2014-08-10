@@ -13,7 +13,7 @@ $(document).ready(function() {
             if (enter.keyCode==13) {
                 console.log("enter is pressed.");
                 postGrocery();
-        }
+            }
         });
     };
     
@@ -24,12 +24,18 @@ $(document).ready(function() {
     function postGrocery() {
         var grocery = $("#groceries").val();
         var listitem = '<li class="notbought"><img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox">' +grocery+ '<input type="button" id="delete" value="Delete"> </li>'
-        $(".items").append(listitem);
-        $("#groceries").val("");
-        console.log(grocery);
-        console.log(listitem);
-    };
 
+        if (grocery == "") {
+            alert("Please enter something to get from the store.");
+        }
+        else {            
+            $(".items").append(listitem);
+            $("#groceries").val("");
+            console.log(grocery);
+            console.log(listitem);
+        };
+    };    
 });
+
 
 
