@@ -28,13 +28,28 @@ $(document).ready(function() {
         if (grocery == "") {
             alert("Please enter something to get from the store.");
         }
-        else {            
-            $(".items").append(listitem);
+        else {
+            // $(".items").hide(grocery); - find a way to fade it in later ... 
+            $(".items").append(listitem).fadeIn(200);
             $("#groceries").val("");
             console.log(grocery);
             console.log(listitem);
         };
-    };    
+    };
+    
+    //make the delete button work.
+    $(document).on("click", "#delete", function() {
+        $(this).closest("li").fadeOut(200);
+    });
+    
+    //toggle the checked or bought classes  .toggle didn't seem to work.
+    $(document).on("click", "#checkbox", function () {
+        if ($(this).closest("li").hasClass("notbought")) {
+            $(this).closest("li").addClass("checked").removeClass("notbought");
+        } else {
+            $(this).closest("li").removeClass("checked").addClass("notbought");
+        }
+    })
 });
 
 
