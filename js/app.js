@@ -64,10 +64,10 @@ $(document).ready(function() {
         $(".items").empty();
     });
     
-    //adding a way to resize the menu
+    //adding a way to resize the instructions
     $('.instructions').hover(function(){
         $(this).attr('size',4);
-        },function(){
+    },function(){
         $(this).attr('size',1);
     });
 });
