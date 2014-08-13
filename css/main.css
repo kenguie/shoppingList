@@ -451,27 +451,10 @@ th {
 
 body {
     background-image: url("../images/shoplight.jpg");
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-size: 100%;
-=======
-    background-size: 100%;  /*cover */
->>>>>>> FETCH_HEAD
-=======
-    background-size: 100%;  /*cover */
->>>>>>> FETCH_HEAD
-=======
-    background-size: 100%;  /*cover */
->>>>>>> FETCH_HEAD
-=======
-    background-size: 100%;  /*cover */
->>>>>>> FETCH_HEAD
     background attachment: fixed;
     background position: center;
     /* border: 3px solid black; */
-    /* background-repeat: no-repeat; */
 }
 
 .instructionContainer {
