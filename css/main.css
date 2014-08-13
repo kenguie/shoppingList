@@ -451,10 +451,23 @@ th {
 
 body {
     background-image: url("../images/shoplight.jpg");
-    background-size: cover;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-size: 100%;
+=======
+    background-size: 100%;  /*cover */
+>>>>>>> FETCH_HEAD
+=======
+    background-size: 100%;  /*cover */
+>>>>>>> FETCH_HEAD
+=======
+    background-size: 100%;  /*cover */
+>>>>>>> FETCH_HEAD
     background attachment: fixed;
     background position: center;
     /* border: 3px solid black; */
+    /* background-repeat: no-repeat; */
 }
 
 .instructionContainer {
@@ -465,11 +478,13 @@ body {
 .instructions {
   font-weight: bold;
   border: 2px solid blue;
+  border-radius: 5px;
   padding: 5px;
   background-color: lightblue;
   right: 0;
   opacity: .65;
   position: absolute;
+  overflow: hidden;
 }
 
 .title {
@@ -572,5 +587,5 @@ footer {
     font-size: .75em;
     bottom: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
 }

@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    function getGrocery() {
+    //function getGrocery() {     - didn't need it ... it worked!
         
         //append to list using the + button
         $("#addbutton").click(function(enter) {
@@ -15,17 +15,20 @@ $(document).ready(function() {
                 postGrocery();
             }
         });
-    };
+    //};
     
     //defined getGrocery, call it!
-    getGrocery();
+    //getGrocery();
     
     //got the grocery, print it!
     function postGrocery() {
         var grocery = $("#groceries").val();
         var listitem = '<li class="notbought"><img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox">' +grocery+ '<input type="button" id="delete" value="Delete"> </li>'
 
-        if (grocery == "") {
+        if (grocery.indexOf(" ") !== -1 ) {
+            alert("Please enter something to get from the store.");
+        }
+        else if (grocery == "") {
             alert("Please enter something to get from the store.");
         }
         else {
@@ -43,17 +46,29 @@ $(document).ready(function() {
     });
     
     //toggle the checked or bought classes  .toggle didn't seem to work.
-    $(document).on("click", "#checkbox", function () {
+    /* $(document).on("click", "#checkbox", function () {
         if ($(this).closest("li").hasClass("notbought")) {
             $(this).closest("li").addClass("checked").removeClass("notbought");
         } else {
             $(this).closest("li").removeClass("checked").addClass("notbought");
         }
+    }); */
+
+    //getting .toggle to work    
+    $(document).on("click", "#checkbox", function () {
+        $(this).closest("li").toggleClass("notbought checked");
     });
     
     // time to get the clearall working!
     $(document).on("click", "#clearall", function () {
         $(".items").empty();
+    });
+    
+    //adding a way to resize the menu
+    $('.instructions').hover(function(){
+        $(this).attr('size',4);
+        },function(){
+        $(this).attr('size',1);
     });
 });
 
