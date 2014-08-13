@@ -568,6 +568,7 @@ body {
     border: 2px solid lightcoral;
     border-radius: 5px;
     background-color: lightblue;
+    opacity: .85;
 }
 
 footer {
